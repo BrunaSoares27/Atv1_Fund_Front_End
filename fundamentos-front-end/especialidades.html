@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>SGCM - Especialidades</title>
+        <link rel="stylesheet" href="estilo.css" type="text/css">
+    </head>
+    
+    <body>
+        <header>
+            <div id="logo">
+                <img src="imagens/logo.png" alt="Logo SGCM">
+                <span id="titulo">SGCM</span>
+            </div>
+            <div id="usuarioInfo">
+                <span>Usuário: Administrador (admin)</span>
+                <span>Papel: ADMIN</span>
+                <a href="javascript:void(0)" class="botao">Logout</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="atendiemnto.html">Atendimento</a></li>
+                <li><a href="pacientes.html">Pacientes</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="convenios.html">Convênios</a></li>
+                <li id="dropdown">
+                    <a href="javascript:void(0)">
+                        Configurações
+                        <span>&#9660;</span>
+                    </a>
+                    <div id="dropdown_menu">
+                        <a href="unidades.html">Unidades</a>
+                        <a href="especialidades.html">Especialidades</a>
+                        <a href="usuarios.html">Usuários</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <form action="#" id="formCadastro">
+                <div class="grid">
+                    <label for="espec">Especialidade</label>
+                    <input type="text" name="espec" id="espec" required>
+                    <label for="unidades">Unidades</label>
+                </div>
+                <div class="grid">
+                    Unidade A<input type="checkbox" name="unidadeA" value="1">
+                    Unidade B<input type="checkbox" name="unidadeB" value="2">
+                    Unidade C<input type="checkbox" name="unidadeC" value="3">
+                    Unidade D<input type="checkbox" name="unidadeD" value="4">
+                </div>
+
+                <input type="button" value="Cancelar">
+                <input type="submit" value="Salvar">
+            </form>
+            <div id="comandos">
+                <a href="javascript:void(0)"
+                   id="add"
+                   class="botao">Adicionar</a>
+                <div>
+                    <form action="">
+                        <label for="busca">Busca</label>
+                        <input type="search" name="busca" id="busca">
+                    </form>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Especialidade</th>
+                        <th>Unidades</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fit">1</td>
+                        <td>Imunologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade A</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">2</td>
+                        <td>Anestesiologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade A</a>
+                                <a href="javascript:void(0)">Unidade B</a>
+                                <a href="javascript:void(0)">Unidade C</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">3</td>
+                        <td>Cardiologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade A</a>
+                                <a href="javascript:void(0)">Unidade B</a>
+                                <a href="javascript:void(0)">Unidade C</a>
+                                <a href="javascript:void(0)">Unidade D</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">4</td>
+                        <td>Dermatologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade D</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">5</td>
+                        <td>Geriatria</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade D</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">6</td>
+                        <td>Infectologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade C</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">7</td>
+                        <td>Oftalmologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade A</a>
+                                <a href="javascript:void(0)">Unidade B</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">8</td>
+                        <td>Pediatria</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade A</a>
+                                <a href="javascript:void(0)">Unidade B</a>
+                                <a href="javascript:void(0)">Unidade C</a>
+                                <a href="javascript:void(0)">Unidade D</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">9</td>
+                        <td>Otorrinolaringologia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade C</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fit">10</td>
+                        <td>Radioterapia</td>
+                        <td>
+                            <div id="unidades">
+                                <a href="javascript:void(0)">Unidade D</a>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total de registros: 10</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <footer>
+            <span>SGCM - Sistema de Gerenciamento de Clínica Médica</span>
+            <span>Suporte técnico: (68) 5555-5555 | <a href="mailto:suporte.sgcm@ufac.br">suporte.sgcm@ufac.br</a></span>
+        </footer>
+    </body>
+</html>
